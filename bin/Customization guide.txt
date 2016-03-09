@@ -1,0 +1,2 @@
+# Custom map: Submit a 14 x 14 matrix with letter 'g' and 'w' to directory ~/SourceFiles. No other characters or punctuations aloowed. 'G' represents grass and 'w' represents wall.
+# Custom player: submit an avatar to ~/SourceFiles.
