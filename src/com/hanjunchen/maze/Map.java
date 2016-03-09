@@ -28,6 +28,11 @@ public class Map {
 		return map[y].substring(x,x+1);		
 	}
 	
+	// identical to getMap
+	public char getMap1(int x, int y){
+		return map[y].charAt(x);
+	}
+	
 	public Image getGrass(){
 		return grass;
 	}
@@ -46,7 +51,7 @@ public class Map {
 	private void readFile() {
 		// TODO Auto-generated method stub
 		while (scanner.hasNext()){
-			for (int i=0; i<map.length; i++){
+			for (int i=0; i<arraySize; i++){
 				map[i]=scanner.next();
 			}
 		}
