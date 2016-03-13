@@ -11,12 +11,11 @@ public class GameTimer {
     Timer countdownTimer;
     int timeRemaining = 10;
 
-    public GameTimer(JLabel passedLabel,boolean displayInJFrame) {
-    	if (displayInJFrame == true)
-    		countdownTimer = new Timer(25, new CountdownTimerListener());
+    public GameTimer(JLabel passedLabel) {
+
+    		countdownTimer = new Timer(10000000, new CountdownTimerListener());
     	//else if (CallerClass.getCallerClassName().class instanceof ActionListener) 
     		//countdownTimer = new Timer (25,CallerClass.getCallerClassName());
-    	else countdownTimer = new Timer (25,null);
        this.label = passedLabel;
        countdownTimer.start();
     }

@@ -11,13 +11,15 @@ import javax.swing.JOptionPane;
 public class Map {
 	private Scanner scanner;
 	private String[] map;
-	private Image grass, wall;
+	private Image grass, wall, finish;
 	public static final int arraySize = 14;
 	public Map(){
 		ImageIcon img = new ImageIcon("SourceFiles/grass.png");
 		grass=img.getImage();
 		img=new ImageIcon("SourceFiles/wall.png");
 		wall=img.getImage();
+		img= new ImageIcon("SourceFiles/finish-line.jpg");
+		finish = img.getImage();
 		map = new String[arraySize];
 		openFile();
 		readFile();
@@ -26,6 +28,10 @@ public class Map {
 	
 	public String getMap(int x, int y){
 		return map[y].substring(x,x+1);		
+	}
+	
+	public Image getFinishScreen(){
+		return finish;
 	}
 	
 	// identical to getMap

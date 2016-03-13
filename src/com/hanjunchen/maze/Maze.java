@@ -13,12 +13,11 @@ public class Maze {
 	//private JLabel timerLabel;
 	public Maze(){
 		 frame = new JFrame("Maze Game");
-		 //frame.setTitle("Maze Game");
 		 board = new Board();
 		 frame.getContentPane().add(board); // initialize a Board (Japanel) and add to the JFrame
 		 frame.pack();
 		 frame.setSize(464,485);
-		 frame.setResizable(false);
+		 //frame.setResizable(false);
 		 frame.setLocationRelativeTo(null);
 		 //timerLabel = new JLabel("10", JLabel.CENTER);
 		 //frame.getContentPane().add(timerLabel);
